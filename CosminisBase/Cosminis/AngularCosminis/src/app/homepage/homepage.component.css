@@ -1,0 +1,89 @@
+.Container1
+{
+    display:flex;
+
+    justify-content: space-around;
+}
+
+.row1 {
+    background-color: midnightblue;
+    height:25vh;
+    width: 25%;
+    border-width: 3px;
+    border-style: solid;
+    border-color:black;
+    margin-bottom: 150px;
+}
+
+.row2 {
+    background-color: midnightblue;
+    height:25vh;
+    width: 25%;
+    border-width: 3px;
+    border-style: solid;
+    border-color:black;
+}
+
+@keyframes pulse 
+{
+    0% 
+    {
+        transform: scale(0.5);
+    }
+    25% 
+    {
+        transform: scale(0.75);
+    }
+    50% 
+    {
+        transform: scale(1);
+    }
+    75% 
+    {
+        transform: scale(0.75);
+    }
+    100% 
+    {
+        transform: scale(0.5);
+    }
+}
+
+.fartButton
+{
+    opacity: 80%;
+    height: 300px;
+    width: 600px;
+    animation: pulse 10s linear infinite;
+}
+
+.InvisibleBox
+{
+    background-color: transparent;
+    display:flex;
+    border-width: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.GoButton
+{
+    height: 150x;
+    width: 300px;
+}
+
+.SeeAllCosminis
+{
+    height: 400px;
+    width: 575px;
+    padding-bottom: 100px;
+}
+
+.show-case {
+    height: 300px;
+    width: 300px;
+}
+
+.btn {
+    background: plum;
+    opacity: 80%;
+}

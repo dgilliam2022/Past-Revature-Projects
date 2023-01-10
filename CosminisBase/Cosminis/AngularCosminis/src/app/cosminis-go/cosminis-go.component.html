@@ -1,0 +1,40 @@
+<div class="GoBody">
+	<header>
+		<h1>Cosminis Go!</h1>
+		<div  class="buttonContainer">
+			<div  class="goButton">
+				<button class="generate">Go!</button>
+			</div>
+			<div class="homeButton">			
+				<button type="button" (click)="gotoHome()" class="homeButton btn-light">Homepage</button>
+			</div>	
+		</div>
+		<h1>GamePlayed: <span class="Player-counter-display">(_)</span></h1>
+		<h1>WinStreak: <span class="Winning_streak_display">(_)</span></h1>
+	</header>
+
+	<section class="container-one">
+		<div class="left">
+			<div class="image1">
+				<img src="https://app.pixelencounter.com/api/basic/monsters/random">
+			</div>
+			<button class="SelectLeft">Select</button>
+		</div>
+
+		<div class="middle">
+			<div class="tm rotating" id="test">
+				<img class="image2" src="https://app.pixelencounter.com/api/basic/stars?disableBackground=true&height=300&width=300">
+			</div>
+			<div class="bm spinning">
+				<img class="image3" src="https://app.pixelencounter.com/api/basic/planets?disableBackground=true&frame=450&height=500&width=500">
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="image4">
+				<img src="https://app.pixelencounter.com/api/v2/basic/svgmonsters">
+			</div>
+			<button class="SelectRight">Select</button>
+		</div>
+	</section>
+</div>

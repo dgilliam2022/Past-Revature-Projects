@@ -1,0 +1,120 @@
+.Container1 {
+    display:flex;
+    justify-content: center;
+}
+
+.column {
+    height: 100vh;
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+.one {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.two {
+    flex-grow: 1;
+    overflow-y: scroll;
+    background-color: rgba(17, 3, 15, 0.5);
+}
+
+.three {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.searchbar {
+    display: flex;
+}
+
+.card-body {
+    color: mistyrose;
+}
+
+.card-title {
+    color:  plum;
+}
+
+.feed {
+    color: mistyrose;
+    text-align: center;
+}
+
+h2 {
+    color: mistyrose;
+    text-align: center;
+}
+
+.friends-text {
+    flex-grow: 1;
+}
+
+.username {
+    flex-grow: 1;
+    background-color: mistyrose;
+    opacity: 75%;
+}
+
+.search-button {
+    flex-grow: 1;
+}
+
+.post-button {
+    text-align: right;
+}
+
+.post-selector {
+    height: 50px;
+    width: 120px;
+    margin-bottom: 6.9px;
+    margin-right: 4.20px;
+}
+
+#text {
+    background-color: mistyrose;
+    opacity: 75%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.friends-feed {
+    background-color: rgba(87, 69, 138, 0.75);
+}
+
+.friend-options {
+    background-color: rgba(255,183,197,.9);
+} 
+
+.friend-title {
+    color: rgb(17, 5, 77);
+}
+
+.owners-feed {
+    background-color: rgba(255,183,197,.9);
+}
+
+.owner-content {
+    color: rgb(7, 2, 31);
+}
+
+.owner-title {
+    color: rgb(17, 5, 77);
+}
+
+.btn
+{
+    background-color: rgba(185, 117, 181, 0.8);
+    color: mistyrose;
+    margin-right: 10px;
+}
+
+.sub-btn{
+    background-color: rgba(185, 117, 181, 0.8);
+    color: mistyrose;
+    border-radius: 10px;
+    border-color:rgba(17, 3, 15, 0.0);   
+}

@@ -1,0 +1,159 @@
+<app-navbar></app-navbar>
+<section class="ShopContainer">
+    <section class="ShopHeader">
+        <div class="gem-button-container">
+            <button id="gem-button" type="button" (click)="goToGemShop()" class="btn btn-light">Gem Shop</button>
+        </div>
+        <div class="gem-title-container">
+            <h1 class="gem-title">Welcome to the Gold Shop!</h1> 
+        </div>
+        <div class="gem-image-container">
+            <img src= "../../assets/Pics/goldcoins-transparent.png" class="gem-image">
+        </div>
+    </section>
+
+    <section class="ShopTitles">     
+        <h3>Item Name</h3><!--Trying to create a "header" row... 'ItemName, Cost, Qty, Subtotal'-->
+        <h3>Cost</h3>
+        <h3>Quantity</h3>
+        <h3>Subtotal</h3>
+    </section>
+    
+    <section class="ShopBody">
+
+        <div class="ItemName"><!--Okay so this would be the "Egg purchase row"-->
+            <h3>Egg(s)</h3>
+            <h3>Chili</h3>
+            <h3>Cold Cut Sandwich</h3>
+            <h3>"Special Salad"</h3>
+            <h3>Marshmallow</h3>
+            <h3>Holy Water</h3>
+            <h3>Devil Fruit</h3>
+        </div>
+
+        <div class="Cost">
+            <h3>100</h3>
+            <h3>10</h3>
+            <h3>10</h3>
+            <h3>10</h3>
+            <h3>10</h3>
+            <h3>10</h3>
+            <h3>10</h3>
+        </div>
+        
+        <div class="UserInput">
+            <select class="EggQuantity" [(ngModel)]="eggQty" id="Choice-number" (change)="updateTotal()"> 
+                <option value="0" id="Choice-zero">0</option>
+                <option value="1" id="Choice-one">1</option>
+                <option value="2" id="Choice-two">2</option>
+                <option value="3" id="Choice-three">3</option>
+                <option value="4" id="Choice-four">4</option>
+                <option value="5" id="Choice-five">5</option>
+                <option value="6" id="Choice-six">6</option>
+                <option value="7" id="Choice-seven">7</option>
+                <option value="8" id="Choice-eight">8</option>
+                <option value="9" id="Choice-nine">9</option>
+                <option value="10" id="Choice-ten">10</option>
+            </select>
+
+            <select class="Quantity" [(ngModel)]="foodQty[0]" id="Choice-number"  (change)="updateTotal()"> 
+                <option value="0" id="Choice-zero">0</option>
+                <option value="1" id="Choice-one">1</option>
+                <option value="2" id="Choice-two">2</option>
+                <option value="3" id="Choice-three">3</option>
+                <option value="4" id="Choice-four">4</option>
+                <option value="5" id="Choice-five">5</option>
+                <option value="6" id="Choice-six">6</option>
+                <option value="7" id="Choice-seven">7</option>
+                <option value="8" id="Choice-eight">8</option>
+                <option value="9" id="Choice-nine">9</option>
+                <option value="10" id="Choice-ten">10</option>
+            </select>
+
+            <select class="Quantity" [(ngModel)]="foodQty[1]" id="Choice-number" (change)="updateTotal()"> 
+                <option value="0" id="Choice-zero">0</option>
+                <option value="1" id="Choice-one">1</option>
+                <option value="2" id="Choice-two">2</option>
+                <option value="3" id="Choice-three">3</option>
+                <option value="4" id="Choice-four">4</option>
+                <option value="5" id="Choice-five">5</option>
+                <option value="6" id="Choice-six">6</option>
+                <option value="7" id="Choice-seven">7</option>
+                <option value="8" id="Choice-eight">8</option>
+                <option value="9" id="Choice-nine">9</option>
+                <option value="10" id="Choice-ten">10</option>
+            </select>
+
+            <select class="Quantity" [(ngModel)]="foodQty[2]" id="Choice-number" (change)="updateTotal()">
+                <option value="0" id="Choice-zero">0</option>
+                <option value="1" id="Choice-one">1</option>
+                <option value="2" id="Choice-two">2</option>
+                <option value="3" id="Choice-three">3</option>
+                <option value="4" id="Choice-four">4</option>
+                <option value="5" id="Choice-five">5</option>
+                <option value="6" id="Choice-six">6</option>
+                <option value="7" id="Choice-seven">7</option>
+                <option value="8" id="Choice-eight">8</option>
+                <option value="9" id="Choice-nine">9</option>
+                <option value="10" id="Choice-ten">10</option>
+            </select>
+
+            <select class="Quantity" [(ngModel)]="foodQty[3]" id="Choice-number" (change)="updateTotal()">
+                <option value="0" id="Choice-zero">0</option>
+                <option value="1" id="Choice-one">1</option>
+                <option value="2" id="Choice-two">2</option>
+                <option value="3" id="Choice-three">3</option>
+                <option value="4" id="Choice-four">4</option>
+                <option value="5" id="Choice-five">5</option>
+                <option value="6" id="Choice-six">6</option>
+                <option value="7" id="Choice-seven">7</option>
+                <option value="8" id="Choice-eight">8</option>
+                <option value="9" id="Choice-nine">9</option>
+                <option value="10" id="Choice-ten">10</option>
+            </select>
+
+            <select class="Quantity" [(ngModel)]="foodQty[4]" id="Choice-number" (change)="updateTotal()">
+                <option value="0" id="Choice-zero">0</option>
+                <option value="1" id="Choice-one">1</option>
+                <option value="2" id="Choice-two">2</option>
+                <option value="3" id="Choice-three">3</option>
+                <option value="4" id="Choice-four">4</option>
+                <option value="5" id="Choice-five">5</option>
+                <option value="6" id="Choice-six">6</option>
+                <option value="7" id="Choice-seven">7</option>
+                <option value="8" id="Choice-eight">8</option>
+                <option value="9" id="Choice-nine">9</option>
+                <option value="10" id="Choice-ten">10</option>
+            </select>
+
+            <select class="Quantity" [(ngModel)]="foodQty[5]" id="Choice-number" (change)="updateTotal()">
+                <option value="0" id="Choice-zero">0</option>
+                <option value="1" id="Choice-one">1</option>
+                <option value="2" id="Choice-two">2</option>
+                <option value="3" id="Choice-three">3</option>
+                <option value="4" id="Choice-four">4</option>
+                <option value="5" id="Choice-five">5</option>
+                <option value="6" id="Choice-six">6</option>
+                <option value="7" id="Choice-seven">7</option>
+                <option value="8" id="Choice-eight">8</option>
+                <option value="9" id="Choice-nine">9</option>
+                <option value="10" id="Choice-ten">10</option>
+            </select>
+        </div>    
+
+        <div class="Subtotal">
+            <h3>cost: <span id="totalFoodCost">{{eggSub}}</span></h3>
+            <h3>cost: <span id="totalFoodCost">{{chiliSub}}</span></h3>
+            <h3>cost: <span id="totalFoodCost">{{sandwhichSub}}</span></h3>
+            <h3>cost: <span id="totalFoodCost">{{saladSub}}</span></h3>
+            <h3>cost: <span id="totalFoodCost">{{marshmellowSub}}</span></h3>
+            <h3>cost: <span id="totalFoodCost">{{holySub}}</span></h3>
+            <h3>cost: <span id="totalFoodCost">{{devilSub}}</span></h3>
+        </div>
+    </section>
+
+    <section class="ShopTotal">    
+        <h4>Total Price: <span id="totalCost">{{purchaseTotal}}</span></h4><!--""TOTAL" row"--> 
+        <button type="button" (click)="confirmPurchase()" class="btn btn-light">Purchase</button>
+    </section>
+</section>

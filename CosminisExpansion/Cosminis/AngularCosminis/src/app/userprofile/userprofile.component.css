@@ -1,0 +1,213 @@
+.Container1 {
+    display:flex;
+    justify-content: center;
+}
+
+.column {
+    height: 100vh;
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+.one {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.two {
+    flex-grow: 1;
+    overflow-y: scroll;
+    background-color: rgba(17, 3, 15, 0.5);
+}
+
+.three {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.searchbar {
+    display: flex;
+}
+
+.card-body {
+    color: mistyrose;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.card-title {
+    color:  plum;
+}
+
+.feed {
+    color: mistyrose;
+    text-align: center;
+}
+
+h2 {
+    color: mistyrose;
+    text-align: center;
+}
+
+.friends-text {
+    flex-grow: 1;
+}
+
+.username {
+    flex-grow: 1;
+    background-color: mistyrose;
+    opacity: 75%;
+}
+
+#search-button {
+    flex-grow: 1;
+    margin-right: 0;
+}
+
+.post-button {
+    text-align: right;
+}
+
+.post-selector {
+    height: 50px;
+    width: 120px;
+    margin-bottom: 6.9px;
+    margin-right: 4.20px;
+}
+
+#comment-button {
+    margin-right: 0;
+}
+
+#text {
+    background-color: mistyrose;
+    opacity: 75%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.friends-feed {
+    background-color: rgba(87, 69, 138, 0.75);
+}
+
+.friend-options {
+    background-color: rgba(255,183,197,.9);
+} 
+
+.friend-title {
+    color: rgb(17, 5, 77);
+}
+
+.owners-feed {
+    background-color: rgba(255,183,197,.9);
+}
+
+.comment-title {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.comment-content {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.comments-owner {
+    background-color: rgba(240, 237, 215, .9); 
+    color: rgb(7, 2, 31);
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.comments {
+    background-color: rgba(245, 242, 215, .9); 
+    color: rgb(7, 2, 31);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.owner-content {
+    color: rgb(7, 2, 31);
+}
+
+.owner-title {
+    color: rgb(17, 5, 77);
+}
+
+.btn {
+    background-color: rgba(185, 117, 181, 0.8);
+    color: mistyrose;
+    margin-right: 10px;
+}
+
+.column-uno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.column-dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(7, 2, 31);
+}
+
+.column-tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(7, 2, 31);
+}
+
+.small-btn {
+    width: 80px;
+    height: 30px;
+    padding: 0;
+}
+
+.row-one {
+    display: flex;
+}
+
+.mood-child {
+    margin-right: 20px;
+}
+
+.food-choice {
+    width: 180px;
+    height: 30px;
+}
+
+.duplicate2 {
+    color: rgb(7, 2, 31);
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.cardhead {
+    height: 50x;
+    width: 95px;
+    background-color: rgba(0,0,0,.5);
+    border-width: 3px;
+    border-style: solid;
+    border-color: plum;
+}
+
+.all-cosminis {
+    height: 100%;
+    width: 100%;
+}

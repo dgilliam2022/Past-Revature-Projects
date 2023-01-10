@@ -1,0 +1,29 @@
+<section class="NavContainer">
+    <div class="NavLeft">
+        <div type="button" (click)="gotoHome()" class="NavLeft home-button btn-light">Cosminis</div>
+        <p *ngIf="Loggedin()">username: {{currentUsernickname}}</p>
+    </div>    
+    <div class="NavMiddle">
+        <div class="child-container">
+            <div class="midchild" *ngIf="Loggedin()">Eggcount: {{userEgg}}</div>
+            <div class="midchild" *ngIf="Loggedin()">Gold: {{userGold}}</div>
+        </div>
+        <div class="child-container">
+            <div class="midchild" *ngIf="Loggedin()">SF: {{SpicyFoodCount}}</div>
+            <div class="midchild" *ngIf="Loggedin()">CF: {{LeafyFoodCount}}</div>
+            <div class="midchild" *ngIf="Loggedin()">LF: {{ColdFoodCount}}</div>
+            <div class="midchild" *ngIf="Loggedin()">FF: {{FluffyFoodCount}}</div>
+            <div class="midchild" *ngIf="Loggedin()">BF: {{BlessedFoodCount}}</div>
+            <div class="midchild" *ngIf="Loggedin()">CF: {{CursedFoodCount}}</div>
+        </div>
+        <div class="child-container">
+            <div class="midchild"> CompanionMood: {{DisplayCompanionMood}}</div>
+            <div class="midchild"> CompanionHunger: {{DisplayCompanionHunger}}</div>    
+        </div>
+    </div>
+    <div class="NavRight">
+        <button *ngIf="Loggedin()" type="button" (click)="Logout()" class="btn log-out btn-light">Logout</button>
+    </div>
+    <!--<button type="button" (click)="Song1()" class="btn btn-light">Song1</button>
+    <button type="button" (click)="Song2()" class="btn btn-light">Song2</button>-->
+</section>

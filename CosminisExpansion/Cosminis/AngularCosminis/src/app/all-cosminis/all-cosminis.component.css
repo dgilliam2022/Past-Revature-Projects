@@ -1,0 +1,40 @@
+h1 {
+	color: mistyrose;
+}
+
+.container1 {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	row-gap: 95px;
+	column-gap: 40px;
+}
+
+.card-wrapper {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	height: 45vh;
+	width: 18%;
+}
+
+.cardhead {
+	height: 400px;
+	width: 250px;
+	background-color: rgba(0,0,0,.5);
+	border-width: 3px;
+	border-style: solid;
+	border-color: plum;
+}
+
+
+.all-cosminis {
+	height: 100%;
+	width: 100%;
+}
+
+.cardbody {
+	height: 200px;
+	width: 250px;
+	padding: 10px;
+}

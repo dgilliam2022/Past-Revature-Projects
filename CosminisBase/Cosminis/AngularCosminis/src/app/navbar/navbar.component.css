@@ -1,0 +1,52 @@
+.NavContainer {
+    display: flex;
+    column-gap: 300px;
+    color: mistyrose;
+    background-color: rgba(0,0,0,.2);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: plum;
+}
+
+.NavLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    flex-grow: 1;
+}
+
+.NavMiddle {
+    flex-grow: 10;
+}
+
+.child-container {
+    display: flex;
+}
+
+.midchild {
+    padding-right: 10px;
+    margin: 3px;
+}
+
+.NavRight {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.home-button {
+    background: url(https://media.istockphoto.com/photos/purple-space-stars-picture-id157639696?k=20&m=157639696&s=612x612&w=0&h=SdmnpR_xWbXDcd36SggDN0hPX18CqgUjgZ1WQsAK_18=) no-repeat center center;
+    background-size: cover;
+    font-size: 40px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip:text;
+    background-clip:text; 
+    -webkit-text-stroke: 1px mistyrose;
+}
+
+.log-out {
+    background: plum;
+    opacity: 80%;
+}

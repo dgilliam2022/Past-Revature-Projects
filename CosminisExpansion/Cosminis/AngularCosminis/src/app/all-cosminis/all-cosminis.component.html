@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<h1>Check in with your companions!</h1>
+<div class="container1" *ngIf="showCosminis">
+    <div class="card-wrapper" *ngFor="let com of cosminis">
+        <div class="cardhead">
+            <img class="all-cosminis" src="../assets/Pics/{{com.image}}">
+        </div>
+
+        <div class="cardbody bg-dark">
+            <h5 *ngIf="com.nickname" class="card-title">Nickname: {{com.nickname}}</h5>
+            <h5 *ngIf="!com.nickname" class="card-title">Species: {{com.speciesNickname}}</h5>
+            <div>Emotion: {{com.emotionString}}</div>
+            <div>Mood: {{com.mood}}</div>
+            <div>Hunger: {{com.hunger}}</div>
+            <h6 class = "showcaselol" *ngIf="users.showcaseCompanionFk == com.companionId">*~Showcase~*</h6>
+            <button type="button" class="btn btn-primary" id ="showcase" *ngIf="users.showcaseCompanionFk != com.companionId" (click)="SetShowcase(com.companionId)">Set as Showcase!</button>
+        </div>
+    </div> 
+</div>
