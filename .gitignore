@@ -1,0 +1,7 @@
+appsettings.Development.json
+appsettings.json
+Properties/
+bin
+obj
+.DS_Store
+Sensitive
